@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./images/game-of-thrones.png" type="image/x-icon" />
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+
+    <title>The Hangman</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="text-center">THE HANGMAN FROM GAMES OF THRONES</h1>
+        <div class="float-right">Mistake: <span id='mistakes'>0</span> of <span id = 'maxError'></span></div>
+        <div class="text-center">
+            <img id= 'HangmanPic' src="./images/0.png" alt="Le piquet du Pendu">
+            <h2>Great House from the Game of Thrones serie's:</h2>
+            <p id= "wordSpotlight">Enter your word here</p>
+            <div id="keyboard"></div>
+            <button class="btn btn-info" onClick="restart()">Restart</button>
+        </div>
+
+    
+    
+    </div>
+
+<script src="./script.js" ></script>   
+</body>
+</html>

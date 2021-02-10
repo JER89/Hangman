@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+body {
+    
+    background: rgb(26,34,36);
+    background: radial-gradient(circle, rgba(26,34,36,1) 5%, rgba(28,124,159,0.7371323529411764) 100%);
+    justify-content: center;
+    height: 125vh;
+}
+
+#wordSpotlight, .float-right, #mistakes, h1, h2 {
+    color:black;
+	font-family: 'Permanent Marker', 'cursive';	
+}
+
+
+
+
+
+
+
