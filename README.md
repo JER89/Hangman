@@ -5,8 +5,7 @@ Hangman's game with Javascript
 * Challenge : solo
 * Duration : 3 days
 
-## Link : 
-
+## Link : https://jer89.github.io/Hangman/
 ## The mission :
 You have to make a website version of the hangman word game. To do so try to think the structure, the "backend" (functionality) and the frontend (design) of your project before you start coding.
 
