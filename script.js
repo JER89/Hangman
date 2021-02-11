@@ -42,7 +42,7 @@ function generateButtons() {
         </button>
     `).join('');
 
-    document.getElementById('keyboard').innerHTML = buttonsHTML;
+    document.getElementById('target').innerHTML = buttonsHTML;
 }
 
 function handleGuess(chosenLetter) {
@@ -61,26 +61,26 @@ function handleGuess(chosenLetter) {
     }
 }
 function updateHangmanPic() {
-    document.getElementById('HangmanPic').src ="./images/" + mistakes + ".png" ;
+    document.getElementById('Picture').src ="./images/" + mistakes + ".png" ;
 }
 
 function checkIfGameWon() {
     if(wordStatus === answer) {
         playTheme();
-        /*document.getElementById('keyboard').innerHTML = 'Winner !';*/
+        /*document.getElementById('target').innerHTML = 'Winner !';*/
     }    
 }
 
 function checkIfGameLost() {
     if(mistakes === maxError) {
-        document.getElementById('wordSpotlight').innerHTML = 'The answer was: ' + answer;
-       /* document.getElementById('keyboard').innerHTML = 'Looser !'*/
+        document.getElementById('word').innerHTML = 'The answer was: ' + answer;
+       /* document.getElementById('target').innerHTML = 'Looser !'*/
     }
 }
 
 function guessedWord() {
     wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : "  _  ")).join('');
-    document.getElementById('wordSpotlight').innerHTML = wordStatus;
+    document.getElementById('word').innerHTML = wordStatus;
 }
 
 function updateMistakes() {
@@ -90,7 +90,7 @@ function updateMistakes() {
 function restart() {
     mistakes = 0;
     guessed = [];
-    document.getElementById('HangmanPic').src = "./images/0.png";
+    document.getElementById('Picture').src = "./images/0.png";
 
     randomWord();
     guessedWord();
