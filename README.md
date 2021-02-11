@@ -29,6 +29,6 @@ You have to make a website version of the hangman word game. To do so try to thi
 ## Technology :
 * HTML
 * CSS
-* BOOTSTRAP CDN
+* BOOTSTRAP 4 CDN
 * JAVASCRIPT
 
