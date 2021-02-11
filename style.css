@@ -8,7 +8,7 @@ body {
     height: 125vh;
 }
 
-#wordSpotlight, .float-right, #mistakes, h1, h2 {
+#word, .float-right, #mistakes, h1, h2 {
     color:black;
 	font-family: 'Permanent Marker', 'cursive';	
 }
